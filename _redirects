@@ -1,0 +1,13 @@
+/work /temp1/work/ 301
+/work/* /temp1/work/:splat 301
+/services /temp1/services/ 301
+/services/* /temp1/services/:splat 301
+/about /temp1/about/ 301
+/about/* /temp1/about/:splat 301
+/contact /temp1/contact/ 301
+/contact/* /temp1/contact/:splat 301
+/assets/* /temp1/assets/:splat 301
+/media/* /temp1/media/:splat 301
+/favicon.svg /temp1/favicon.svg 301
+/404.html /temp1/404.html 301
+/ /temp1/ 301
