@@ -6,11 +6,14 @@
 
 当前整站在 `/temp1` 下。站点根路径会 301 到 `/temp1/`。
 
-- `/temp1/` 首页
-- `/temp1/work/` 方向样本
-- `/temp1/services/` 服务与营业范围
-- `/temp1/about/` 关于与标志
-- `/temp1/contact/` 联络
+- `/temp1/` 第一版
+- `/temp2/` 至 `/temp7/` 六套不同气质的方案，文案、图片和标志各自独立
+- `/temp2/` Clay，货架与物件
+- `/temp3/` Tesla，展览与广告牌
+- `/temp4/` Nike，服饰战役
+- `/temp5/` Wired，刊物与传播
+- `/temp6/` Apple，器物
+- `/temp7/` Framer，识别与界面
 
 作品页是方向样本，不是已交付客户案例。电话和门牌这一版故意留空。
 

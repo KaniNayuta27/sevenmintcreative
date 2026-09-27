@@ -1,0 +1,56 @@
+@font-face{font-family:Anton;src:url("/temp4/assets/fonts/anton-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+:root{--ink:#111;--muted:#707072;--cloud:#f5f5f5;--line:#e5e5e5}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Helvetica Neue",sans-serif;font-size:16px;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.skip{position:absolute;left:8px;top:-40px;background:#fff;padding:8px}
+.skip:focus{top:8px}
+.util{background:var(--cloud);height:36px;display:flex;align-items:center;justify-content:flex-end;padding:0 28px;font-size:12px;font-weight:500}
+.util a{color:var(--ink);text-decoration:none}
+.top{height:60px;display:flex;align-items:center;padding:0 28px;gap:18px;position:sticky;top:0;background:#fff;z-index:4}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:500}
+.brand img{width:36px;height:36px;object-fit:cover;border-radius:999px;background:var(--cloud)}
+.desk{display:flex;gap:22px;margin-left:28px}
+.desk a{text-decoration:none;font-weight:500;padding:18px 0;border-bottom:2px solid transparent}
+.desk a[aria-current="page"]{border-bottom-color:var(--ink)}
+.menu{display:none;margin-left:auto;border:0;background:var(--cloud);border-radius:999px;min-height:40px;padding:0 16px;font:inherit;font-weight:500}
+.drawer a{display:block;padding:18px 28px;text-decoration:none;font-weight:500;border-top:1px solid var(--line)}
+.campaign{position:relative;min-height:86vh;color:#fff;display:flex;align-items:flex-end}
+.campaign img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.campaign .copy{position:relative;z-index:1;padding:64px 28px 40px;width:100%;background:linear-gradient(to top,rgba(0,0,0,.55),rgba(0,0,0,0) 70%)}
+.campaign h1{font-family:Anton,"PingFang SC",sans-serif;font-weight:400;font-size:clamp(64px,12vw,112px);line-height:1;letter-spacing:0;margin:0;text-transform:uppercase}
+.campaign p{margin:8px 0 16px;max-width:28em}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-weight:500}
+.pill.ink{background:#111;color:#fff}
+.tiles{display:grid;grid-template-columns:1fr 1fr}
+.tile{position:relative;min-height:70vh;color:#fff;display:flex;align-items:flex-end;text-decoration:none}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile span{position:relative;z-index:1;font-family:Anton,"PingFang SC",sans-serif;font-size:clamp(40px,5vw,72px);line-height:1.05;text-transform:uppercase;padding:28px;background:linear-gradient(to top,rgba(0,0,0,.5),transparent);width:100%}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:48px 28px}
+.product{text-decoration:none}
+.product .ph{background:var(--cloud);aspect-ratio:4/5}
+.product img{width:100%;height:100%;object-fit:cover}
+.product h3{margin:8px 0 0;font-size:16px;font-weight:500}
+.product small{color:var(--muted)}
+.sheet{padding:48px 28px 72px;max-width:860px}
+.sheet h1{font-family:Anton,"PingFang SC",sans-serif;font-size:clamp(48px,8vw,80px);line-height:.9;text-transform:uppercase;margin:0 0 8px;font-weight:400}
+.meta{color:var(--muted);font-size:14px;font-weight:500}
+.frame{margin:20px 0;background:var(--cloud)}
+.frame img{width:100%;max-height:78vh;object-fit:cover}
+form{display:grid;gap:12px;max-width:480px}
+label{display:grid;gap:6px;font-weight:500}
+input,textarea{font:inherit;border:0;background:var(--cloud);border-radius:18px;padding:14px 16px}
+textarea{min-height:140px}
+.scope{color:var(--muted);font-size:13px;line-height:1.7}
+footer{background:#111;color:#fff;padding:36px 28px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+footer a{color:#fff;text-decoration:none;font-weight:500}
+footer small{color:#9e9ea0;margin-left:auto}
+@media(max-width:900px){
+  .desk{display:none}.menu{display:inline-flex}
+  .tiles,.products{grid-template-columns:1fr 1fr}
+  .util{display:none}
+}
+@media(max-width:640px){.products{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
